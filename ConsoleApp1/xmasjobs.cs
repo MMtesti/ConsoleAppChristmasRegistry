@@ -58,7 +58,7 @@ namespace ConsoleApp1
         private void Submenu1()
         {
             string prompt = @"Let's add new Children or Gifts!
-(Use the arrow keys to navigate and press Enter to select an option";
+(Use the arrow keys to navigate and press Enter to select an option)";
             string[] options = { "Add new children", "Add new gifts", "Back to main menu" };
 
             Menu subMenu1 = new Menu(prompt, options);
@@ -256,7 +256,7 @@ namespace ConsoleApp1
             }
             else
             {
-                WriteLine("There must be ate least 1 unassigned child and 1 gift avaialble. Add more children or gifts.");
+                WriteLine("There must be at least 1 unassigned child and 1 gift available. Add more children or gifts.");
             }
             WriteLine("\nPress any key to return to menu...");
             ReadKey(true);
@@ -291,7 +291,7 @@ namespace ConsoleApp1
             }
             else
             {
-                WriteLine("There must be ate least 1 unassigned child and 1 gift avaialble. Add more children or gifts.");
+                WriteLine("There must be at least 1 unassigned child and 1 gift available. Add more children or gifts.");
             }
 
             WriteLine("\nPress any key to return to menu...");
@@ -367,9 +367,9 @@ namespace ConsoleApp1
             WriteLine("Be carefull, Santa!" +
                 " A gift's name must start with a capital letter.\n A gift's name can consist of two words (with a space in between) 15 symbols long each." +
                 "\n A second word of a gift can start with either a small or a capital letter." +
-                "\n Only (en-US) letters are axepted\n");
+                "\n Only (en-US) letters are accepted\n");
             int b, a = 0;
-            string pattern = @"^([A-Z][a-z]{1,14}\s*[a-zA-z]{0,15})$";
+            string pattern = @"^([A-Z][a-z]{1,14}\s*[a-zA-Z]{0,15})$";
             string go;
             do
             {
